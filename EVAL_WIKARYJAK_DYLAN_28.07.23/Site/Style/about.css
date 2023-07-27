@@ -1,0 +1,276 @@
+/* --------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background: #010e1b;
+  height: 98vh;
+  margin: 0 -0.1em;
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(150%);
+}
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #35e888;
+  text-decoration: none;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+  -drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+svg {
+  fill: currentColor;
+  height: 30px;
+  width: 30px;
+  color: #12d640;
+}
+
+/*
+--------------------------------------------------------------
+#  Menu de Navigation
+-------------------------------------------------------------- */
+/*Desktop Navigation */
+.navMenu {
+  margin-top: 35px;
+}
+
+.navMenu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navMenu li + li {
+  margin-left: 30px;
+}
+
+.navMenu a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.navMenu a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #9e7f25;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navMenu a:hover:before,
+.navMenu li:hover > a:before,
+.navMenu .active > a:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navMenu a:hover,
+.navMenu .active > a,
+.navMenu li:hover > a {
+  color: #12d640;
+  text-decoration: none;
+}
+
+/*Header Top*/
+.headerTop {
+  height: 90px;
+  margin: none;
+  padding: 0 1em;
+  background: #09203a;
+}
+
+.headerTop .headerTop h2 {
+  display: none;
+}
+
+.headerTop h1 {
+  margin-right: auto;
+  font-size: 36px;
+}
+
+.headerTop .container {
+  display: flex;
+  align-items: center;
+}
+
+.headerTop .navMenu {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .headerTop {
+    height: 60px;
+  }
+  .headerTop h1 {
+    font-size: 26px;
+  }
+}
+
+/*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+section {
+  width: 100%;
+  top: 140px;
+  bottom: 100%;
+  z-index: 2;
+}
+
+section.sectionShow {
+  top: 70px;
+  bottom: auto;
+  padding-bottom: 0px;
+}
+
+section .container {
+  background: rgba(0, 0, 0, 0);
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  section {
+    top: 120px;
+  }
+  section.sectionShow {
+    top: 80px;
+  }
+}
+.sectionTitle h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 20px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #dee2e6;
+  font-family: "Poppins", sans-serif;
+}
+
+.sectionTitle h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #dee2e6;
+  margin: 4px 10px;
+}
+
+.sectionTitle p {
+  margin: 0;
+  margin: -15px 0 15px 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.row {
+  display: flex;
+  padding: 3em;
+}
+
+.aboutMe .content {
+  list-style: none;
+  padding: 4em 1em;
+}
+
+.aboutMe .content p:last-child {
+  margin-bottom: 0;
+}
+
+.aboutImg {
+  padding-top: 4em;
+}
+
+.imgAbout {
+  margin-right: 1em;
+}
+
+.content p {
+  padding: 0 2em;
+  width: 80%;
+  font-size: 24px;
+}
+
+ul li {
+  list-style: none;
+  font-size: 24px;
+}
+
+.pdf {
+  margin-left: 0.8em;
+}
+
+.row div span {
+  padding-top: 1.4em;
+  font-size: 24px;
+}

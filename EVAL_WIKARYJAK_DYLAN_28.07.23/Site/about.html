@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A propos</title>
-    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="./Style/about.css">
   </head>
   <body>
     <header class="headerTop">
@@ -12,7 +12,7 @@
         <h1>
           <a href="main.html">Wikaryjak Dylan</a>
         </h1>
-        <nav class="navMenu d-none d-lg-block">
+        <nav class="navMenu">
           <ul>
             <li>
               <a href="./main.html"
@@ -50,16 +50,16 @@
     </header>
     
     <!-- ========== Début A propos Section ========== -->
-    <section id="about" class="about">
+    <section class="about">
       <div class="aboutMe container">
         <div class="sectionTitle">
-          <h2>About Me</h2>
+          <h2>A props de moi</h2>
         </div>
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="./img/téléchargement.jpg" class="imgFluid" alt="" />
+          <div class="aboutImg">
+            <img src="./img/Potter.jpg" class="imgAbout" alt="" />
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="content">
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
               dignissimos, minus in inventore quasi atque. Sequi expedita sint
@@ -70,24 +70,31 @@
               natus? Possimus, rem adipisci?
             </p>
             <div class="row">
-              <div class="col-lg-6">
+              <div>
                 <ul>
                   <li>
-                    <i class="icofont-rounded-right"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                    </svg>
                     <strong>Ville:</strong> Douai, France
                   </li>
                   <li>
-                    <i class="icofont-rounded-right"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                    </svg>
                     <strong>E&#8209;mail:</strong> wikaryjak.dylan@gmail.com
                   </li>
                 </ul>
               </div>
             </div>
+            <div class="row">
+              <span>Téléchargement CV :</span> <a class="pdf" href="./img/CV Wikaryjak Dylan (1).pdf" onclick="openPopup(this.href); return false;"><img src="./img/Logo/Pdf.png" alt=""></a>
+            </div>
           </div>
         </div>
       </div>
-    </d>
-
+    </section>
     <!-- ========== Fin A propos Section ========== -->
+<script src="script.js"></script>
   </body>
 </html>
