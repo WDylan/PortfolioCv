@@ -1,100 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A propos</title>
-    <link rel="stylesheet" href="./Style/about.css">
-  </head>
-  <body>
-    <header class="headerTop">
-      <div class="container">
-        <h1>
-          <a href="main.html">Wikaryjak Dylan</a>
-        </h1>
-        <nav class="navMenu">
-          <ul>
-            <li>
-              <a href="./main.html"
-                ><span>Accueil</span></a
-              >
-            </li>
-            <li class="active">
-              <a href="./about.html""
-                ><span>A propos</span></a
-              >
-            </li>
-            <li>
-              <a href="./experience.html""
-                ><span>Expérience</span></a
-              >
-            </li>
-            <li>
-              <a href="./formation.html""
-                ><span>Formation</span></a
-              >
-            </li>
-            <li>
-              <a href="./projetSkill.html"" projetSkill
-                ><span>Projets et Skills</span></a
-              >
-            </li>
-            <li>
-              <a href="./contact.html""
-                ><span>Contact</span></a
-              >
-            </li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A propos</title>
+  <link rel="stylesheet" href="./Style/about.css">
+</head>
+
+<body>
+  <div class="header-content">
+    <div class="mobileMenuIcon" onclick="toggleMobileMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+        viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+        viewBox="0 0 16 16">
+        <path
+          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+      </svg>
+    </div>
+    <div class="navMenuMobile mobile-hide">
+      <ul>
+        <li class="active">
+          <a href="./main.html"><span>Accueil</span></a>
+        </li>
+        <li>
+          <a href="./about.html"><span>A propos</span></a>
+        </li>
+        <li>
+          <a href="./experience.html"><span>Expérience</span></a>
+        </li>
+        <li>
+          <a href="./formation.html"><span>Formation</span></a>
+        </li>
+        <li>
+          <a href="./projetSkill.html"><span>Projets et Skills</span></a>
+        </li>
+        <li>
+          <a href="./contact.html"><span>Contact</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="headerTop">
+    <div class="container">
+      <h1>
+        <a href="main.html">Wikaryjak Dylan</a>
+      </h1>
+      <nav class="navMenu">
+        <ul>
+          <li>
+            <a href="./main.html"><span>Accueil</span></a>
+          </li>
+          <li class="active">
+            <a href="./about.html"><span>A propos</span></a>
+          </li>
+          <li>
+            <a href="./experience.html"><span>Expérience</span></a>
+          </li>
+          <li>
+            <a href="./formation.html"><span>Formation</span></a>
+          </li>
+          <li>
+            <a href="./projetSkill.html" projetSkill><span>Projets et Skills</span></a>
+          </li>
+          <li>
+            <a href="./contact.html"><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Début A propos Section ========== -->
+  <section class="about">
+    <div class="aboutMe container">
+      <div class="sectionTitle">
+        <h2>A propos de moi</h2>
       </div>
-    </header>
-    
-    <!-- ========== Début A propos Section ========== -->
-    <section class="about">
-      <div class="aboutMe container">
-        <div class="sectionTitle">
-          <h2>A props de moi</h2>
+      <div class="row">
+        <div class="aboutImg">
+          <img src="./img/Potter.jpg" class="imgAbout" alt="" />
         </div>
-        <div class="row">
-          <div class="aboutImg">
-            <img src="./img/Potter.jpg" class="imgAbout" alt="" />
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+            dignissimos, minus in inventore quasi atque. Sequi expedita sint
+            eius minima explicabo facilis neque obcaecati at. Dolor magni
+            quod, commodi deserunt id ab? Esse optio quidem voluptates
+            voluptas aperiam iste doloremque molestiae quibusdam, deleniti
+            repudiandae, laboriosam ex, dolorum ut consectetur ipsam voluptate
+            natus? Possimus, rem adipisci?
+          </p>
+          <div class="row">
+            <div>
+              <ul>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path
+                      d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                  </svg>
+                  <strong>Ville:</strong> Douai, France
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path
+                      d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
+                  </svg>
+                  <strong>E&#8209;mail:</strong> wikaryjak.dylan@gmail.com
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="content">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-              dignissimos, minus in inventore quasi atque. Sequi expedita sint
-              eius minima explicabo facilis neque obcaecati at. Dolor magni
-              quod, commodi deserunt id ab? Esse optio quidem voluptates
-              voluptas aperiam iste doloremque molestiae quibusdam, deleniti
-              repudiandae, laboriosam ex, dolorum ut consectetur ipsam voluptate
-              natus? Possimus, rem adipisci?
-            </p>
-            <div class="row">
-              <div>
-                <ul>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                    </svg>
-                    <strong>Ville:</strong> Douai, France
-                  </li>
-                  <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-                      <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
-                    </svg>
-                    <strong>E&#8209;mail:</strong> wikaryjak.dylan@gmail.com
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <span>Téléchargement CV :</span> <a class="pdf" href="./img/CV Wikaryjak Dylan (1).pdf" onclick="openPopup(this.href); return false;"><img src="./img/Logo/Pdf.png" alt=""></a>
-            </div>
+          <div class="row">
+            <span>Téléchargement CV :</span> <a class="pdf" href="./img/CV Wikaryjak Dylan (1).pdf"
+              onclick="openPopup(this.href); return false;"><img src="./img/Logo/Pdf.png" alt=""></a>
           </div>
         </div>
       </div>
-    </section>
-    <!-- ========== Fin A propos Section ========== -->
-<script src="script.js"></script>
-  </body>
+    </div>
+  </section>
+  <!-- ========== Fin A propos Section ========== -->
+  <script src="script.js"></script>
+</body>
+
 </html>
