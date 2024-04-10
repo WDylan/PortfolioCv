@@ -18,4 +18,4 @@ Cloner le repos
 
 # Maquette
   
-      • La maquette a été réaliser sur Figma et est disponible dans le dossier "Maquette" pour tout les formats Mobile, tablette et Desktop.Elle est également téléchargeable directement sur figma grace au fichier "Full_Maquette.fig"
+La maquette a été réaliser sur Figma et est disponible dans le dossier "Maquette" pour tout les formats Mobile, tablette et Desktop.Elle est également téléchargeable directement sur figma grace au fichier "Full_Maquette.fig"
